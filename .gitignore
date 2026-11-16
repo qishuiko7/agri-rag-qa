@@ -1,0 +1,29 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.log
+
+# ---------- 环境与密钥 ----------
+.env
+.env.local
+
+# ---------- 运行期数据 ----------
+backend/data/chroma/
+backend/data/records/
+backend/data/uploads/
+backend/data/corpus/
+backend/data/corpus_report.json
+
+# ---------- 前端 ----------
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

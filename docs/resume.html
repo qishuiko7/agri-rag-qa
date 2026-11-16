@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>王振屹 - 简历</title>
+<style>
+  @page { size: Letter; margin: 43.9pt 47pt 64.4pt 47pt; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1a1a;
+    --navy: #1f3864;
+    --grey: #5a5a5a;
+    --light: #8a8a8a;
+    --rule: #d9dee7;
+  }
+
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.7;
+    color: var(--ink);
+    width: 100%;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ================= 头部 ================= */
+  header { position: relative; padding-bottom: 9pt; border-bottom: 1.6pt solid var(--navy); }
+
+  h1 {
+    font-size: 23pt;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5pt;
+    text-indent: 5pt;
+    color: var(--navy);
+    margin-bottom: 4pt;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 10pt;
+    color: var(--grey);
+    letter-spacing: 0.6pt;
+    margin-bottom: 7pt;
+  }
+
+  .contacts { text-align: center; }
+  .contacts .row {
+    font-size: 9.6pt;
+    color: var(--grey);
+    line-height: 1.75;
+  }
+  .contacts .dot { color: var(--rule); margin: 0 6pt; }
+
+  .photo {
+    position: absolute;
+    top: -3pt;
+    right: 0;
+    width: 74pt;
+    height: 104pt;
+    object-fit: cover;
+    border-radius: 3pt;
+  }
+
+  /* ================= 章节 ================= */
+  section { margin-top: 13pt; }
+
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 1.4pt;
+    padding-left: 8pt;
+    border-left: 3pt solid var(--navy);
+    line-height: 1.15;
+    margin-bottom: 7pt;
+  }
+
+  /* ================= 条目 ================= */
+  .item { margin-bottom: 6pt; }
+  .item:last-child { margin-bottom: 0; }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+  }
+  .head .name { font-size: 11pt; font-weight: 700; color: var(--ink); }
+  .head .date { font-size: 9.6pt; color: var(--light); white-space: nowrap; }
+
+  .meta {
+    font-size: 9.4pt;
+    color: var(--grey);
+    margin: 1pt 0 3pt;
+    letter-spacing: 0.2pt;
+  }
+  .meta .sep { color: var(--rule); margin: 0 4pt; }
+
+  ul { list-style: none; }
+  li {
+    position: relative;
+    padding-left: 12pt;
+    margin-bottom: 2pt;
+    text-align: justify;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 1pt;
+    top: 6.2pt;
+    width: 3.2pt;
+    height: 3.2pt;
+    background: var(--navy);
+    border-radius: 50%;
+  }
+  li b { font-weight: 700; }
+  li:last-child { margin-bottom: 0; }
+
+  /* 技能表：左标签 + 右内容 */
+  .skills { display: grid; grid-template-columns: 62pt 1fr; row-gap: 1.2pt; }
+  .skills dt { font-weight: 700; color: var(--ink); font-size: 10.5pt; }
+  .skills dd { color: var(--ink); font-size: 10.5pt; text-align: justify; }
+
+  h2.p1 { margin-top: 20pt; }
+  h2.p2 { margin-top: 34pt; }
+  .item.p2 { margin-bottom: 27pt; }
+
+  .item, li { break-inside: avoid; }
+  h2 { break-after: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+  <img class="photo" src="photo.png" alt="">
+  <h1>王振屹</h1>
+  <div class="tagline">计算机科学与技术 · 2027 届本科</div>
+  <div class="contacts">
+    <div class="row">16624571929<span class="dot">|</span>2115546738@qq.com<span class="dot">|</span>2005.11<span class="dot">|</span>CET-4</div>
+    <div class="row">现居 吉林长春<span class="dot">|</span>籍贯 河南新乡<span class="dot">|</span>吉林农业大学</div>
+  </div>
+</header>
+
+<section>
+  <h2 class="p1">教育背景</h2>
+  <div class="item">
+    <div class="head">
+      <span class="name">吉林农业大学　计算机科学与技术（本科）</span>
+      <span class="date">2023.09 – 2027.06（预计毕业）</span>
+    </div>
+    <ul>
+      <li>平均成绩 <b>83.4 / 100</b>；核心课程：数据结构、计算机网络、操作系统、数据库原理、面向对象程序设计、Java 开发、软件工程、Python 程序设计、机器学习基础、人工智能</li>
+      <li>获奖：专业二等奖学金（2023–2024 上）、专业三等奖学金（2023–2024 下、2024–2025 上）、文体活动先进个人（2023–2024、2024–2025）</li>
+      <li>证书：全国大学英语四级（CET-4）</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="p1">专业技能</h2>
+  <dl class="skills">
+    <dt>编程语言</dt>
+    <dd>Python（项目主力）、Java、SQL</dd>
+    <dt>后端开发</dt>
+    <dd>FastAPI / Flask、RESTful API 设计、统一异常处理、SSE 流式接口</dd>
+    <dt>数据库</dt>
+    <dd>MySQL、SQL Server，三范式建模、索引优化</dd>
+    <dt>前端可视化</dt>
+    <dd>Vue 3、ECharts、HTML / CSS / JavaScript</dd>
+    <dt>AI 应用</dt>
+    <dd>LangChain、RAG 检索增强、Function Calling 工具编排</dd>
+    <dt>工程工具</dt>
+    <dd>Git、Linux、Postman、MQTT</dd>
+  </dl>
+</section>
+
+<section>
+  <h2 class="p1">项目经历</h2>
+
+  <div class="item">
+    <div class="head">
+      <span class="name">农业智能问答助手：RAG 检索与 Agent 工具编排</span>
+      <span class="date">2026.10</span>
+    </div>
+    <div class="meta">个人项目<span class="sep">·</span>Python、FastAPI、LangChain、Chroma、Vue 3、通义千问 API</div>
+    <ul>
+      <li>面向农业农技咨询场景，独立实现「语料治理—向量检索—生成—记录」完整链路，单机部署无需服务器；建成 <b>598 篇文档、2270 个检索片段</b>的本地知识库</li>
+      <li><b>知识库构建：</b>抓取农业农村信息网 680 篇农技文档，设计清洗规则过滤广告与导航噪声，按四类归档并剥离元信息；中文标点断句切片（500 / 50），构建 Chroma 文件型向量库</li>
+      <li><b>检索增强：</b>在向量相似度上叠加中文 2-gram 覆盖率做混合重排，自建 25 题评测集测得 <b>Recall@5 88%、MRR 0.741</b>；关键词领域拦截经 30 例评测准确率 100%</li>
+      <li><b>服务与交付：</b>FastAPI 提供 REST 与 SSE 流式接口，Vue 3 实现问答 / 知识库 / 向量库 / 历史 / 设置 / 首页六页面，前端产物由后端托管、单命令启动</li>
+      <li><b>Agent 扩展：</b>基于 Function Calling 实现多步推理循环（限 5 轮），集成知识库检索、农事日历、实时气象、症状初诊、施肥与农药配比 6 类工具，调用轨迹可视化；配套 43 项自测与 6 类工程文档</li>
+    </ul>
+  </div>
+
+  <div class="item p2">
+    <div class="head">
+      <span class="name">营养液多参数水质监测与根系病害早期预警系统</span>
+      <span class="date">2026.09</span>
+    </div>
+    <div class="meta">个人项目<span class="sep">·</span>Python、FastAPI、MySQL、MQTT、Vue 3、ECharts、XGBoost</div>
+    <ul>
+      <li>独立设计并实现「感知—接入—建模—展示」四层闭环架构</li>
+      <li><b>后端服务：</b>基于 FastAPI 实现 RESTful 接口层，完成请求参数校验、统一异常处理与错误码规范，并输出关键链路日志便于问题定位；MySQL 按三范式设计 6 张业务表，对高频查询的时间字段建立索引</li>
+      <li><b>数据接入：</b>ESP32 六参数采集数据经 MQTT 发布 / 订阅模式接入后端，实现采集端与服务端的解耦</li>
+      <li><b>算法建模：</b>基于 5 点滑动窗口构建 18 维特征（原值 + 均值 + 变化率），XGBoost 完成正常 / 病害 / 异常三分类，测试集准确率 92.14%，平均提前 118 小时预警</li>
+      <li><b>前端展示：</b>Vue 3 + ECharts 搭建实时监控大屏与病害风险趋势图，支持阈值与模型双通道告警</li>
+    </ul>
+  </div>
+
+  <div class="item p2">
+    <div class="head">
+      <span class="name">基于 Webots 的三机械臂三色智能分拣系统</span>
+      <span class="date">2026.09</span>
+    </div>
+    <div class="meta">课程设计（个人独立完成）<span class="sep">·</span>Python 3.10、Webots R2025a、UR 三臂、Robotiq 夹爪、状态机</div>
+    <ul>
+      <li><b>项目背景：</b>为三台机械臂末端加装相机，以「仅依据相机图像判定颜色、不得读取场景真值或物块颜色字段」为硬约束，实现红绿蓝物块的自动识别、按色抓取、分类投放与复位全流程</li>
+      <li><b>视觉识别：</b>针对固定 ROI 方案随相机位姿漂移失效的问题，设计「饱和度扫描定位 + 16×16 邻域均值 + 明度 / 饱和度 / 主次通道绝对差 / 相对差四重判据」算法，不依赖固定 ROI，位姿微调后无需重新标定</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="p2">实践经历</h2>
+  <div class="item p2">
+    <div class="head">
+      <span class="name">2025 长春航空展　总服务台工作人员</span>
+      <span class="date">2025.09</span>
+    </div>
+    <ul>
+      <li>在展区总服务台为游客解答疑问、引导咨询，日均服务百余人次</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="p2">校园经历</h2>
+  <ul>
+    <li>教学管理委员会 宣传部副部长（2024–2025）：负责部门宣传工作统筹与文案撰写，具备较强的文档编写与沟通协调能力</li>
+    <li>共青团大学生文化艺术中心 舞台艺术部副部长（2024–2025）：参与并组织校级文化艺术活动，具备团队协作与活动执行经验</li>
+    <li>教学管理委员会办公部 / 舞台艺术部 志愿者（2023–2024）</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="p2">自我评价</h2>
+  <ul>
+    <li>专业基础扎实（平均成绩 83.4），具备从数据库设计、后端接口开发到前端可视化与算法建模的完整项目落地经验，动手能力强，能独立推进任务</li>
+    <li>踏实沉稳、责任心强，有校级学生组织管理岗经历，善于沟通协作与技术文档沉淀</li>
+  </ul>
+</section>
+
+</body>
+</html>
