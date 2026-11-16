@@ -11,16 +11,20 @@ venv/
 .env.local
 
 # ---------- 运行期数据 ----------
+# 向量库 / 对话记录 / 上传文件属于运行时产物，不入库（可由语料重新生成）
 backend/data/chroma/
 backend/data/records/
 backend/data/uploads/
-backend/data/corpus/
 backend/data/corpus_report.json
+
+# 说明：backend/data/corpus/ 为知识库语料，属于项目内容，随仓库分发，
+#       首次启动会自动入库构建向量库，无需手动准备。
 
 # ---------- 前端 ----------
 node_modules/
-frontend/dist/
 frontend/.vite/
+# 说明：frontend/dist/ 为已构建的前端产物，随仓库分发，
+#       克隆后无需安装 Node 即可直接运行；如需修改前端，重新 npm run build 覆盖即可。
 
 # ---------- 编辑器 / 系统 ----------
 .vscode/
